@@ -1,0 +1,20 @@
+[
+    {
+        "title": "კვანტური ფიზიკა",
+        "author": "რიჩარდ ფეინმანი",
+        "cat": "ფიზიკა",
+        "link": "https://example.com/physics.pdf"
+    },
+    {
+        "title": "გენეტიკა",
+        "author": "გრეგორ მენდელი",
+        "cat": "ბიოლოგია",
+        "link": "https://example.com/biology.pdf"
+    },
+    {
+        "title": "ასტროფიზიკა",
+        "author": "სტივენ ჰოკინგი",
+        "cat": "ასტრონომია",
+        "link": ""
+    }
+]
