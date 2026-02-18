@@ -9,7 +9,7 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.core.text import LabelBase
 from kivy.core.window import Window
 
-# ფონტის რეგისტრაცია პროექტის საქაღალდიდან
+# ფონტის რეგისტრცია პროექტის საქაღალდიდან
 try:
     LabelBase.register(name="Sylfaen", fn_regular="font.ttf")
 except:
@@ -135,4 +135,5 @@ class ScienceApp(App):
         return sm
 
 if __name__ == "__main__":
+
     ScienceApp().run()
