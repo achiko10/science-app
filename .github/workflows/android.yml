@@ -15,11 +15,11 @@ jobs:
 
       - name: Build APK
         run: |
-          # ეს ხაზი გვეტყვის, სად რა ფაილი გვიდევს
-          ls -R
-          # აქ იწყება აწყობა
-          buildozer android debug || echo "Buildozer-მა შეცდომა დაუშვა"
-          
+          # ვამოწმებთ, ნამდვილად ხედავს თუ არა ფაილებს
+          ls -a
+          # ვიწყებთ აწყობას და ვაიძულებთ, რომ არ გაჩერდეს
+          yes | buildozer android debug
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
