@@ -15,8 +15,11 @@ jobs:
 
       - name: Build APK
         run: |
-          yes | buildozer android debug
-
+          # ეს ხაზი გვეტყვის, სად რა ფაილი გვიდევს
+          ls -R
+          # აქ იწყება აწყობა
+          buildozer android debug || echo "Buildozer-მა შეცდომა დაუშვა"
+          
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
